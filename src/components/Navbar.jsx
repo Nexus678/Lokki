@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Store, LogOut, User, LayoutDashboard, Settings, ChevronDown, Package, ShoppingBag } from 'lucide-react';
 import { useAuthStore } from '../store/useAuthStore';
 
@@ -7,6 +7,7 @@ export default function Navbar() {
   const { user, logout } = useAuthStore();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const location = useLocation();
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -20,6 +21,10 @@ export default function Navbar() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  if (location.pathname === '/') {
+    return null;
+  }
 
   return (
     <nav className="navbar" style={{ position: 'relative', zIndex: 50 }}>
