@@ -71,6 +71,17 @@ export default function LandingPage() {
     <div className="landing-page">
       {/* HERO SECTION WITH EMBEDDED HEADER */}
       <section className="yelp-hero-section">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="hero-background-video"
+          poster="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80"
+        >
+          <source src="/Creaci%C3%B3n_de_Video_con_Logo_Giratorio.mp4" type="video/mp4" />
+        </video>
+        <div className="hero-overlay"></div>
         <header className="yelp-header">
           <div className="yelp-header-top">
             <Link to="/" className="yelp-logo">
