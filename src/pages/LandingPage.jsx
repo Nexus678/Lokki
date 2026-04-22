@@ -85,8 +85,7 @@ export default function LandingPage() {
         <header className="yelp-header">
           <div className="yelp-header-top">
             <Link to="/" className="yelp-logo">
-              <span className="yelp-logo-text">Lokki</span>
-              <span className="yelp-logo-icon">✶</span>
+              <img src="/Lokki.png" alt="Lokki" style={{ height: '40px' }} />
             </Link>
 
             <div className="yelp-header-search-container">

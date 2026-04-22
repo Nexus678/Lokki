@@ -30,8 +30,7 @@ export default function Navbar() {
     <nav className="navbar" style={{ position: 'relative', zIndex: 50 }}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <Store className="logo-icon" size={28} />
-          <span>Lokki</span>
+          <img src="/Lokki.png" alt="Lokki" style={{ height: '35px' }} />
         </Link>
         
         <div className="navbar-actions">

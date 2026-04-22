@@ -20,6 +20,10 @@
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
+  background-image: url('/fondo%20del%20body.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: var(--text-dark);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -217,7 +221,7 @@ a {
 /* --- YELP-LIKE LANDING PAGE --- */
 
 .landing-page {
-  background-color: var(--bg-white);
+  background-color: transparent;
   min-height: 100vh;
 }
 

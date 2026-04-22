@@ -163,7 +163,7 @@ export default function StorePublicPage() {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#f9f9f9', position: 'relative' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: 'transparent', position: 'relative' }}>
       
       {/* Floating Cart Button */}
       <button 
